@@ -1,0 +1,97 @@
+.pt-event {
+    margin-top: calc(5rem - 30px);
+
+    .pt-event-sec {
+        .pt-event-head-title {
+            color: $primary-color;
+            font-weight: $font-weight-semibold;
+        }
+
+        .pt-event-slider {
+            margin-top: 3rem;
+
+            border-radius: 20px;
+            background: $extra-light;
+
+            .pt-event-card {
+                margin: 3rem 2.4rem;
+                border: 0;
+                background: none;
+
+                .pt-event-date {
+                    // border: 1px solid red;
+
+                    .pt-event-date-wrapper {
+                        // border: 1px solid orange;
+
+                        .pt-event-day {
+                            font-weight: $font-weight-bold;
+                            margin-bottom: 0;
+                            line-height: 1;
+                            display: inline-block;
+                            border: 1px solid $secondary-color;
+                            border-radius: 6px;
+                            padding: 7px 28px 16px;
+                            text-decoration: none;
+
+                            .pt-event-day-span {
+                                font-size: $h3-font-size;
+                                color: $secondary-color;
+                            }
+
+                            .pt-event-year {
+                                color: $primary-color;
+                            }
+                        }
+    
+                        .pt-event-month-year {
+                            margin-bottom: 0;
+                        }
+                    }
+                    
+                }
+
+                .pt-event-card-body {
+                    .pt-event-title {
+                        color: $primary-color;
+                        font-size: $heading-info;
+                        font-weight: $font-weight-medium;
+                    }
+                    .pt-event-description {
+                        width: 80%;
+                        margin: 0 auto;
+
+                        @media #{$tablet} {
+                            width: 90%;
+                        }
+                    }
+                }
+
+                .pt-event-footer {
+                    border: 0;
+                    background: none;
+
+                    .pt-event-btn {
+                        color: $light-color;
+                        font-size: $font-size-base;
+                        // background: none;
+                        padding: 8px 30px;
+                        border-radius: 22px;
+                        border: 1px solid $secondary-color;
+
+                        /* added */
+                        background: linear-gradient(to top, $secondary-color 50%, $extra-light 50%);
+                        background-size: 100% 200%;
+                        background-position: top bottom;
+                        transition: all .5s ease-out;
+
+                        &:hover {
+                            color: $base-color;
+                            background-position: bottom left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.pt-about {
+    margin-top: 5rem;
+
+    .pt-about-sec {
+
+        /* About-Sec HEADER */
+
+        .pt-about-sec-header::before, .pt-about-sec-header::after {
+            content: '';
+            display: inline-block;
+            border: 1px dashed $light-color;
+            width: calc(50% - 76px);
+            vertical-align: middle;
+        }
+
+        .pt-about-sec-header {
+            display: flex;
+            align-items: center;
+
+            .pt-about-sec-top{
+                height: 90px;
+                width: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                background: $secondary-color;
+                border-radius: 50%;
+    
+                .pt-graduate-cap-svg {
+                    height: 55px;
+                    width: 55px;
+                    fill: $base-color;
+                }
+            }
+        }
+
+        /* About-Sec BODY */
+        .pt-about-wrapper {
+            width: 60%;
+            margin: 0 auto;
+
+            @media #{$tablet} {
+                width: 80%;
+            }
+            .pt-about-title {
+                color: $primary-color;
+                font-weight: $font-weight-semibold;
+                margin-top: 2rem;
+                font-size: $h1-font-size;
+            }
+
+            .pt-about-description {
+                text-align: center;
+                padding: 0 40px;
+                margin-top: 1rem;
+            }
+
+            .pt-btn-about {
+                color: $light-color;
+                font-size: $font-size-base;
+                font-weight: $font-weight-medium;
+                text-transform: uppercase;
+                padding: 8px 24px;
+                margin-top: 1rem;
+                border-radius: 22px;
+                border: 1px solid $secondary-color;
+                // background: $base-color;
+
+                /* added */
+                background: linear-gradient(to right, $secondary-color 50%, $base-color 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .5s ease-out;
+
+                &:hover {
+                    color: $base-color;
+                    background-position: left bottom;
+                }
+            }
+        }
+    }
+}
+

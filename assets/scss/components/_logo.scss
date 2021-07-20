@@ -1,0 +1,32 @@
+/* Footer Logo */
+
+.navbar-brand {
+    .pt-header-logo {
+        color: $primary-color;
+        font-weight: 900;
+        border: 2px solid $primary-color;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* added later */
+        font-size: 30px;
+    }
+
+    .pt-header-logo-a {
+        color: $primary-color;
+        // font-weight: bold;
+        line-height: 1;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 6px;
+
+        /* added later */
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,49 @@
+header {
+    .pt-header-sec {
+        .navbar {
+            .navbar-brand {
+                .pt-header-logo {
+                    color: $primary-color;
+                    font-weight: $font-weight-xl-bold;
+                    border: 1px solid $primary-color;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .pt-header-logo-a {
+                    color: $primary-color;
+                    line-height: 1;
+                    font-size: $font-size-base;
+                    font-weight: $font-weight-semibold;
+                    margin-left: 6px;
+                }
+            }
+            #navbarText {
+                .navbar-nav {
+                    /* added */
+                    align-items: center;
+                    
+                    .nav-item {
+                        .nav-link {
+                            color: $primary-color;
+                            font-size: $subheading-sm;
+                            font-weight: $font-weight-medium;
+                            padding: 8px 12px;
+
+                            &:hover {
+                                background: $extra-light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

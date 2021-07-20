@@ -1,0 +1,121 @@
+.pt-team {
+    margin-top: 5rem;
+
+    .pt-team-sec {
+        .pt-team-wrapper-header {
+            width: 60%;
+            margin: 0 auto;
+
+            @media #{$tablet} {
+                width: 80%;
+            }
+
+            .pt-team-header-title {
+                color: $primary-color;
+                font-weight: $font-weight-semibold;
+            }
+
+            .pt-team-header-description {
+                margin-top: 1.4rem;
+            }
+        }
+
+        // .pt-team-slider{
+            .pt-team-card-deck {
+                margin: 2.4rem 0;
+
+                .slick-prev {
+                    position: absolute;
+                    left: 0;
+                    top: 40%;
+                    outline: none;
+                    z-index: 1;
+                    background: $base-color;
+
+                    /* for arrow */
+                    font-size: $font-size-none;
+                    border-radius: 50%;
+                    height: 30px;
+                    width: 30px;
+                    border: 1px solid $light-color;
+                }
+
+                .slick-prev:before {
+                    content: "<";
+                    color: $light-color;
+                    font-size: $font-size-base;
+                    border-radius: 50%;
+                }
+
+                .slick-next {
+                    position: absolute;
+                    right: 0;
+                    top: 40%;
+                    outline: none;
+                    z-index: 1;
+                    background: $base-color;
+
+                    /* for arrow */
+                    font-size: $font-size-none;
+                    border-radius: 50%;
+                    height: 30px;
+                    width: 30px;
+                    border: 1px solid $light-color;
+                }
+
+                .slick-next::before {
+                    content: ">";
+                    color: $light-color;
+                    font-size: $font-size-base;
+                    border-radius: 50%;
+                }
+
+                .pt-team-card {
+                    margin: 0 30px;
+                    border: 0;
+
+                    .pt-team-card-img {
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        border-radius: 18px;
+                    }
+
+                    .pt-team-card-body {
+                        .pt-team-card-title {
+                            color: $dark-color;
+                            font-size: $font-size-base;
+                            margin-bottom: 0;
+                        }
+
+                        .pt-team-card-position {
+                            color: $dark-color;
+                            font-size: $subheading-sm;
+                        }
+                    }
+                }
+            }
+
+            .pt-btn-team {
+                color: $light-color;
+                font-size: $font-size-base;
+                font-weight: $font-weight-medium;
+                text-transform: uppercase;
+                border: 1px solid $secondary-color;
+                padding: 10px 36px;
+                border-radius: 24px;
+                // background: $base-color;
+
+                /* added */
+                background: linear-gradient(to right, $secondary-color 50%, $base-color 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .5s ease-out;
+
+                &:hover {
+                    color: $base-color;
+                    background-position: left bottom;
+                }
+            }
+        // }
+    }
+}

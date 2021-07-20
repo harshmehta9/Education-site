@@ -1,0 +1,273 @@
+.pt-footer {
+    margin-top: 5rem;
+
+    .pt-footer-sec {
+        .pt-footer-top {
+            .col-md-3:not(:last-child) {
+                border-right: 1px solid $light-color;
+
+                @media #{$mobile} {
+                    border-right: none;
+                }
+            }
+
+            
+            /* Logo Column*/
+            .pt-footer-logo {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+
+            /* Menu Column*/
+            .pt-footer-top-menu-col {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 2rem;
+
+                .pt-footer-top-menu {
+                    display: inline-flex;
+                    flex-direction: column;
+                    
+                    .pt-footer-top-menu-title {
+                        color: $primary-color;
+                        font-size: $subheading;
+                        font-weight: $font-weight-semibold;
+                    }
+
+                    .pt-footer-top-menu-ul {
+                        padding: 0;
+    
+                        .pt-footer-top-menu-ul-li {
+                            a {
+                                color: $black_color;
+                            }
+                            list-style-type: none;
+                        }
+                    }
+                }
+            }
+
+            /* App Column*/
+            .pt-footer-top-app-col {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2rem;
+
+                .pt-footer-top-app {
+                    display: flex;
+                    flex-direction: column;
+
+                    .pt-footer-top-app-title {
+                        color: $primary-color;
+                        font-size: $subheading;
+                        font-weight: $font-weight-semibold;
+                        margin-bottom: 1.4rem;
+                    }
+
+                    .pt-google-play {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: black;
+                        color: white;
+                        width: 130px;
+                        border-radius: 4px;
+                        padding: 6px 0;
+
+                        margin-bottom: 1rem;
+
+                        .pt-playstore-svg {
+                            height: 22px;
+                            width: 22px;
+                        }
+
+                        .pt-playstore-text {
+                            line-height: 1;
+                            padding-left: 4px;
+
+                            .pt-playstore-title {
+                                font-size: $blogheading-xs;
+                                word-spacing: 3px;
+                                text-transform: uppercase;
+                                margin: 0;
+                            }
+                            .pt-playstore-sub-title {
+                                font-size: $subheading-sm;
+                                font-weight: $font-weight-bold;
+                                margin: 0;
+                            }
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                            box-shadow: 2px 3px 16px 0px $light-color;
+                        }
+                    }
+                    .pt-applestore {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: black;
+                        color: white;
+                        width: 130px;
+                        border-radius: 4px;
+                        padding: 6px 0;
+
+                        margin-bottom: 1rem;
+
+                        .pt-apple-svg {
+                            height: 22px;
+                            width: 22px;
+                            fill: $base-color;
+                        }
+
+                        .pt-apple-text {
+                            line-height: 1;
+                            padding-left: 4px;
+
+                            .pt-apple-title {
+                                font-size: $blogheading-xs;
+                                word-spacing: 3px;
+                                text-transform: uppercase;
+                                margin: 0;
+                            }
+
+                            .pt-apple-sub-title {
+                                font-size: $subheading-sm;
+                                font-weight: $font-weight-bold;
+                                margin: 0;
+                            }
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                            box-shadow: 2px 3px 16px 0px $light-color;
+                        }
+                    }
+                }
+            }
+            /* Address Column*/
+            .pt-footer-top-address-col {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 2rem;
+
+                .pt-footer-top-address {
+                    display: flex;
+                    flex-direction: column;
+
+                    .pt-footer-address {
+                        display: flex;
+                        font-size: $subheading-md;
+                        line-height: 1.2;
+                        margin-bottom: 1rem;
+
+                        .pt-footer-address-detail {
+                            padding-left: 8px;
+
+                            .pt-footer-address-location {
+                                
+                                margin: 0;
+                            }
+
+                            .pt-footer-address-one {
+                                margin: 0;
+                            }
+
+                            .pt-footer-address-two {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .pt-footer-address-mobile {
+                        display: flex;
+                        font-size: $subheading-md;
+                        line-height: 1.2;
+                        margin-bottom: 1rem;
+
+                        .pt-footer-number {
+                            margin: 0;
+                            padding-left: 8px;
+                        }
+                    }
+
+                    .pt-footer-email {
+                        display: flex;
+                        font-size: $subheading-md;
+                        line-height: 1.2;
+                        margin-bottom: 1rem;
+
+                        .pt-footer-user-email {
+                            padding-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pt-footer-bottom-sec {
+            // padding: 1rem 0;
+            background: $dark-color;
+
+            .pt-footer-bottom {
+                color: $base-color;
+
+                .pt-footer-copyright {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    @media #{$mobile} {
+                        justify-content: center;
+                    }
+
+                    .pt-footer-social-icons {
+                        padding: 1rem 0;
+
+                        .pt-footer-facebook, .pt-footer-twitter, .pt-footer-instagram, .pt-footer-youtube {
+                            margin: 0 1rem;
+                        }
+
+                        .fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
+                            font-size: $h1-font-size;
+                            color: $base-color;
+                        }
+
+                        .fa-facebook {
+                            &:hover {
+                                color: $facebook-icon-color;
+                            }
+                        }
+
+                        .fa-twitter {
+                            &:hover {
+                                color: $twitter-icon-color;
+                            }
+                        }
+
+                        .fa-instagram {
+                            &:hover {
+                                color: $instagram-icon-color;
+                            }
+                        }
+
+                        .fa-youtube {
+                            &:hover {
+                                color: $youtube-icon-color;
+                            }
+                        }
+                    }
+
+                    .pt-footer-copyright-p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        
+    }
+}

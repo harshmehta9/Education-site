@@ -1,0 +1,97 @@
+.pt-faq {
+    margin-top: 5rem;
+
+    .pt-faq-sec {
+        .pt-faq-wrapper {
+            width: 60%;
+            margin: 0 auto;
+
+            @media #{$tablet} {
+                width: 80%;
+            }
+
+            .pt-faq-title{
+                color: $primary-color;
+                font-weight: $font-weight-semibold;
+            }
+
+            .pt-faq-description{
+                margin: 2rem 0;
+            }
+        }
+
+        .pt-faq-accordion {
+            .pt-faq-card {
+                border-radius: 0;
+                border: 0;
+                border-top: 1px solid $light-color;
+                border-bottom: 1px solid $light-color;
+
+                .pt-faq-card-header {
+                    background: none;
+                    padding: 0;
+
+                    .pt-faq-card-header-a.collapsed {
+                        .rotate-icon {
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    .pt-faq-card-header-a {
+                        display: block;
+                        padding: 1rem;
+                        color: $black-color;
+
+                        .rotate-icon {
+                            transform: rotate(180deg);
+                        }
+
+                        .pt-faq-question {
+                            font-size: $font-size-base;
+                            font-weight: $font-weight-medium;
+                            margin: 0;
+
+                            display: flex;
+                            justify-content: space-between;
+                        }
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .pt-faq-card-collapse {
+                    .pt-faq-card-body {
+                        font-weight: $font-weight-medium;
+                    }
+                }
+
+            }
+        }
+
+        .pt-faq-btn-wrapper {
+            margin-top: 3rem;
+
+            .pt-faq-btn {
+                color: $light-color;
+                font-size: $font-size-base;
+                padding: 8px 58px;
+                border-radius: 22px;
+                border: 1px solid $secondary-color;
+                // background: $base-color;
+
+                /* added */
+                background: linear-gradient(to right, $secondary-color 50%, $base-color 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .5s ease-out;
+
+                &:hover {
+                    color: $base-color;
+                    background-position: left bottom;
+                }
+            }
+        }
+    }
+}

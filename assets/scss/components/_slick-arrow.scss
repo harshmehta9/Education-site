@@ -1,0 +1,52 @@
+.slick-prev {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    outline: none!important;
+    z-index: 1;
+    background: $base-color;
+
+    /* for arrow */
+    font-size: 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid $light-color;
+
+}
+
+.slick-prev:before {
+    // content: "\f053";
+    // font-family: "Font Awesome 5 Free";
+    // font-weight: 900;
+    content: '<';
+    
+    font-size: 16px;
+    color: $light-color;
+    font-size: 16px;
+    border-radius: 50%;
+
+}
+
+.slick-next {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    outline: none!important;
+    z-index: 1;
+    background: $base-color;
+
+    /* for arrow */
+    font-size: 0;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid $light-color;
+}
+
+.slick-next::before {
+    content: ">";
+    color: $light-color;
+    font-size: 16px;
+    border-radius: 50%;
+}

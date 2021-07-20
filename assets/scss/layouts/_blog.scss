@@ -1,0 +1,85 @@
+.pt-blog {
+    margin-top: 5rem;
+
+    .pt-blog-sec {
+        .pt-blot-wrapper-header {
+            width: 60%;
+            margin: 0 auto;
+
+            @media #{$tablet} {
+                width: 80%;
+            }
+
+            .pt-blog-header-title {
+                color: $primary-color;
+                font-weight: $font-weight-semibold;
+            }
+
+            .pt-blog-header-description {
+                margin: 1.6rem 0 ;
+            }
+        }
+
+        .pt-blog-card-deck {
+            margin: 3rem 0;
+
+            .pt-blog-card {
+                border: 0;
+                margin: 0 30px 30px 30px;
+
+                .pt-blog-img {
+                    aspect-ratio: 2/1;
+                    object-fit: cover;
+
+                    border-radius: 20px;
+                }
+
+                .pt-blog-card-body {
+                    padding: 20px 0;
+
+                    .pt-blog-title {
+                        color: $primary-color;
+                        font-size: $heading-info;
+                        font-weight: $font-weight-medium;
+                    }
+
+                    .pt-blog-date {
+                        color: $light-color;
+                        font-size: $blogheading-sm;
+                        display: inline-block;
+                        margin-bottom: 0.8rem;
+                    }
+
+                    
+                }
+                .pt-blog-footer {
+                    border: 0;
+                    padding: 12px 0;
+                    background: $base-color;
+
+                    .pt-blog-btn {
+                        color: $light-color;
+                        font-size: $blogheading;
+                        font-weight: $font-weight-medium;
+                        text-transform: uppercase;
+                        border: 1px solid $secondary-color;
+                        padding: 8px 28px;
+                        border-radius: 22px;
+                        // background: $base-color;
+
+                        /* added */
+                        background: linear-gradient(to top, $secondary-color 50%, $base-color 50%);
+                        background-size: 100% 200%;
+                        background-position: top bottom;
+                        transition: all .5s ease-out;
+
+                        &:hover {
+                            color: $base-color;
+                            background-position: bottom left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

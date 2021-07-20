@@ -1,0 +1,16 @@
+/* Hover Button */
+.pt-btn {
+    // padding: 12px 24px;
+    // margin: 0 auto;
+    // border: 1px solid $secondary-color;
+    background: linear-gradient(to right, $secondary-color 50%, $base-color 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+
+    &:hover {
+        background-position: left bottom;
+    }
+}
+  
+  

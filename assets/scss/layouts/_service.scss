@@ -1,0 +1,87 @@
+.pt-service {
+    margin-top: 5rem;
+
+    .pt-service-sec {
+        .pt-service-title {
+            color: $primary-color;
+            font-weight: $font-weight-semibold;
+        }
+
+        .pt-service-card-deck {
+            margin-top: 3rem;
+
+            .pt-service-card {
+                border: 0;
+                /* added */
+                border-radius: 20px;
+                &:hover {
+                    // box-shadow: 1px 4px 16px 0px $light-color;
+                    box-shadow: 3px 4px 12px 0px $light-color;
+                    transition: all 300ms ease;
+                }
+    
+                .pt-service-img {
+                    aspect-ratio: 3/2;
+                    object-fit: cover;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+        
+                .pt-service-card-body {
+                    padding: 22px 0;
+                    background: $dark-color;
+
+                    .pt-service-card-title {
+                        color: $base-color;
+                        padding: 0 20px;
+                        margin-bottom: 0;
+                        font-size: $h1-font-size;
+                    }
+                }
+
+                .pt-service-card-footer {
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    background: $dark-color;
+                    border-top: 0;
+                    // padding: 0 20px 30px 20px;
+                    padding-top: 0;
+                    padding-bottom: 30px;
+
+                    .pt-service-btn {
+                        color: $light-color;
+                        font-size: $font-size-base;
+                        font-weight: $font-weight-medium;
+                        text-transform: uppercase;
+                        padding: 8px 28px;
+                        border-radius: 22px;
+                        border: 1px solid $secondary-color;
+                        background: $dark-color;
+
+                        @media #{$mobile} {
+                            padding: 8px 20px;
+                            font-size: $blogheading-sm;
+                        }
+
+                        @media #{$sm_mobile} {
+                            padding: 8px 28px;
+                            font-size: $font-size-base;
+                        }
+
+                        /* added */
+                        background: linear-gradient(to top, $secondary-color 50%, $dark-color 50%);
+                        background-size: 100% 200%;
+                        background-position: top bottom;
+                        transition: all .5s ease-out;
+
+                        &:hover {
+                            color: $base-color;
+                            background-position: bottom left;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
